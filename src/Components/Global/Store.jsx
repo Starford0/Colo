@@ -12,7 +12,7 @@ const persistConfig ={
 
 const persistedReducer= persistReducer(persistConfig,myReducer);
 
-export const store = configureStore ({
+export const Store = configureStore ({
     reducer:{persistedReducer},
     middleware:(getDefaultMiddleware) =>
     getDefaultMiddleware({
