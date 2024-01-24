@@ -1,0 +1,59 @@
+.dropDown{
+    height: max-content;
+    width: 120px;
+    /* width: max-content; */
+    background-color: #fff;
+    position: absolute;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    top: 70px;
+    /* right: 10%; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 10px;
+    padding-block: 10px;
+    /* left: 400px; */
+}
+
+.dropDown-Layer1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.dropDown-Layer1:hover {
+    color: rgb(181, 174, 196);
+    cursor: pointer;
+  }
+
+.dropDown-Layer1 p{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.hr{
+    width: 70%;
+    border: 1px solid #d9d9d9;
+}
+
+
+@media screen and (width >= 816px) and (width <= 988px) {
+    .dropDown{
+        right: "";
+        /* background-color: red; */
+    }
+}
+
+@media screen and (width <= 570px) {
+ 
+}
+
+@media screen and (width <= 246px) {
+
+}
+
+@media screen and (width <= 136px) {
+}

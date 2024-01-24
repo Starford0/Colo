@@ -1,0 +1,72 @@
+.blogparent{
+    width: 100%;
+    height:  max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aqua; */
+}
+.blogwrapper{
+    width: 90%;
+    height: max-content;
+}
+.latestblog{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* background-color: green; */
+    margin-bottom: 10px;
+}
+.latestblog h1{
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 48px;
+}
+.latestblog ::after{
+    position: absolute;
+    width: 5%;
+    height: 5px;
+    background-color: red;
+    top: 95%;
+    left: 50%;
+    content: "";
+}
+.celebs{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 40px;
+    /* background-color: darkblue; */
+}
+.stan{
+    width: 33%;
+    height: 100%;
+    /* background-color: yellow; */
+}
+.stan img{
+    width: 100%;
+    height: 100%;
+    object-fit: inherit;
+}
+
+@media screen and (max-width: 899px){
+    .blogparent{
+        height: max-content;
+    }
+    .latestblog{
+        height: 100px;
+    }
+    .celebs{
+        margin-top: 50px;
+        flex-direction: column;
+        gap: 20px;
+        height: max-content;
+    }
+    .stan{
+        width: 100%;
+    }
+}

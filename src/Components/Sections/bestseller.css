@@ -1,0 +1,46 @@
+.bestsellerparent {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.bestsellerwrapper {
+  width: 85%;
+  height: max-content;
+  padding-top: 20px;
+  /* background-color: aqua; */
+}
+.bestseller {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  position: relative;
+  /* background-color: green; */
+}
+.bestseller::after {
+  position: absolute;
+  width: 5%;
+  height: 5px;
+  background-color: red;
+  top: 95%;
+  content: "";
+}
+.bestseller h1 {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.bestsellerproduct {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* gap: 1px; */
+  /* background-color: red; */
+}
